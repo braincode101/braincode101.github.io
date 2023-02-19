@@ -1,1 +1,1 @@
-This is a read me file!
+เตรียมพบกับกิจกรรม brainCode101 เร็วๆนี้!
