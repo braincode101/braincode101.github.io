@@ -26,6 +26,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="extensions/sticky-header/bootstrap-table-sticky-header.css">
+  <script src="extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
 
   <!-- =======================================================
   * Template Name: Squadfree - v2.2.0
@@ -70,10 +72,12 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <div class="pic"><img style="padding: 15px 5px 10px 20px;" src="assets/img/braincode101r.png" class="img-fluid" alt="" width="25%" height="25%"></div>
+      <div class="pic"><img src="assets/img/braincode101r.png" class="img-fluid img w-25 " alt=""></div>
+      <hr>
       <h1>Brain Building Blocks</h1> 
   	  <h1>Brain Code Camp</h1>
   	  <h1>Brain Hackathon</h1>
+      <hr>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -99,7 +103,6 @@
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row news-container">
-
                 <div class="col-md-6 icon-box">
                   <i class="bx bx-bulb"></i>
                   <h4>brainBuildingBlocks</h4>
@@ -137,100 +140,102 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>กิจกรรม</h2>
-          <div style="overflow-x:auto;"> 
-            <!-- class="tscroll" -->
-            <table style="width:100%">
+        <div class="section-title"><h2>กิจกรรม</h2></div>
+        <div class="section-title container-md container-fluid overflow-auto" data-aos="fade-in" data-aos-delay="100">
+          <table class="table table-hover text-center">
+            <thead class="sticky-header">
               <tr>
-                <th style = "background-color: rgba(255, 255, 255, 1)"> </th>
-                <th>Brain Building Blocks</th>
-                <th>Brain Code Camp</th>
-                <th>Brain Hackathon</th>
+                <th></th>
+                <th scope="col">Brain Building Blocks</th>
+                <th scope="col">Brain Code Camp</th>
+                <th scope="col">Brain Hackathon</th>
               </tr>
-              <tr>
-                <td>ที่ไหน</td>
-                <td>Online course</td>
-                <td>Online workshop</td>
-                <td>Onsite competition</td>
-              </tr>
-              <tr>
-                <td>เมื่อไร</td>
-                <td>เริ่มตั้งแต่<br>ต้นเดือน พค. 66</td>
-                <td>ต้นเดือน สค. 66 ถึง <br>ปลายเดือน ตค. 66</td>
-                <td>ปลายเดือนธค. 66 ถึง <br>ต้นเดือน มค. 67</td>
-              </tr>
-              <tr>
-                <td>ระยะเวลา</td>
-                <td>เนื้อหารวม 10-12 ชม.</td>
-                <td>4-8 ชม. / สัปดาห์ <br>เป็นเวลา 3 เดือน</td>
-                <td>24 ชม.</td>
-              </tr>
-              <tr>
-                <td>ระยะเวลาการรับสมัคร</td>
-                <td>ตลอดปี</td>
-                <td><ul>
-                      <li>เปิดรับสมัครตั้งแต่ 16 พค. - 31 มิย. 2566 (มีข้อสอบข้อเขียน)</li>
-                      <li>สัมภาษณ์เดือน กค. 66 </li>
-                      <li>ประกาศผล 16 กค. 66 </li>
-                    </ul>
-                </td>
-                <td>ไม่มีการเปิดรับสมัคร</td>
-              </tr>
-              <tr>
-                <td>จำนวน</td>
-                <td>ไม่จำกัดจำนวน</td>
-                <td>40-50 คน</td>
-                <td>20-30 คน</td>
-              </tr>
-              <tr>
-                <td>Basic requirements</td>
-                <td>บุคคลทั่วไป ไม่จำกัด <br> อายุ เพศ และการศึกษา</td>
-                <td><ul><li>วุฒิขั้นต่ำมัธยมศึกษาตอนต้น</li> <li>มีพื้นฐานวิธีคิดแบบ STEM</li></ul></td>
-                <td>เคยเข้าร่วมกิจกรรม brainCodeCamp หรือ AI builders </td>
-              </tr>
-              <tr>
-                <td>Special requirements</td>
-                <td>ไม่มี</td>
-                <td><ul><li>ทักษะการเขียนโปรแกรมขั้นพื้นฐาน (python, R หรือ MATLAB) </li>
-                        <li>เนื้อหาที่เรียนรู้จาก brain building block</li>
-                    </ul>
-                <td>เคยเข้าร่วมกิจกรรม brainCodeCamp หรือ AI builders</td>
-              </tr>
-              <tr>
-                <td>เนื้อหา</td>
-                <td><ul><li>Intro to cognitive neuroscience</li>
-                        <li>Intro to computational modelling</li>
-                        <li>Intro to machine learning and AI</li>
-                        <li>Intro to clinical and non-clinical applications</li>
-                    </ul>
-                </td>
-                <td><ul><li>Connection between brain & behaviors</li>
-                    <li>Intro to modeling in neuroscience: what we can do and why it’s important?</li>
-                    <li>Model fitting: How good is our model?</li>
-                    <li>Machine learning: How to train your machine?</li>
-                    <li>Dimensionality  reduction </li>
-                    <li>Deep learning</li>
-                    <li>Brain signal processing (EEG, MRI, neural recording)</li>
-                <td><ul><li>Healthcare problems</li>
-                    <li>Neurotechnology</li>
-                    <li>Consumer behaviors & decision making (Neuroeconomic)</li>
-                    <li>Neuroscience</li>
-                    </ul>
-                </td>
-              </tr>
-              <!-- <tr>
-                <td>--------------------------------</td>
-                <td>----------------------------------------------------</td>
-                <td>----------------------------------------------------</td>
-                <td>----------------------------------------------------</td>
-              </tr> -->
-
-
-            </table>
-          </div>
-
+            </thead>
+            <tr>
+              <th scope="row">ที่ไหน</td>
+              <td>Online course</td>
+              <td>Online workshop</td>
+              <td>Onsite competition</td>
+            </tr>
+            <tr>
+              <th scope="row">เมื่อไร</td>
+              <td>เริ่มตั้งแต่<br>ต้นเดือน พค. 66</td>
+              <td>ต้นเดือน สค. 66 ถึง <br>ปลายเดือน ตค. 66</td>
+              <td>ปลายเดือนธค. 66 ถึง <br>ต้นเดือน มค. 67</td>
+            </tr>
+            <tr>
+              <th scope="row">ระยะเวลา</td>
+              <td>เนื้อหารวม 10-12 ชม.</td>
+              <td>4-8 ชม. / สัปดาห์ <br>เป็นเวลา 3 เดือน</td>
+              <td>24 ชม.</td>
+            </tr>
+            <tr>
+              <th scope="row">รับสมัคร</td>
+              <td>ตลอดปี</td>
+              <td>เปิดรับสมัครตั้งแต่ <br>16 พค. - 31 มิย. 66 <br>(มีข้อสอบข้อเขียน)
+                  <hr>
+                  <br>สัมภาษณ์เดือน กค. 66 
+                  <hr>
+                  <br>ประกาศผล 16 กค. 66 
+              </td>
+              <td>ไม่มีการเปิดรับสมัคร</td>
+            </tr>
+            <tr>
+              <th scope="row">จำนวน</td>
+              <td>ไม่จำกัดจำนวน</td>
+              <td>40-50 คน</td>
+              <td>20-30 คน</td>
+            </tr>
+            <tr>
+              <th scope="row">Basic requirements</td>
+              <td>บุคคลทั่วไป ไม่จำกัด <br> อายุ เพศ และการศึกษา</td>
+              <td>วุฒิขั้นต่ำมัธยมศึกษาตอนต้น <br>มีพื้นฐานวิธีคิดแบบ STEM</td>
+              <td>เคยเข้าร่วมกิจกรรม <br>brainCodeCamp <br>หรือ AI builders </td>
+            </tr>
+            <tr>
+              <th scope="row">Special requirements</td>
+              <td>ไม่มี</td>
+              <td>ทักษะการเขียนโปรแกรมขั้นพื้นฐาน <br>(python, R หรือ MATLAB) <br>และเนื้อหาที่เรียนรู้จาก <br>brain building block</td>
+              <td>เคยเข้าร่วมกิจกรรม <br>brainCodeCamp <br>หรือ AI builders</td>
+            </tr>
+            <tr>
+              <th scope="row">เนื้อหา</td>
+              <td>Intro to cognitive neuroscience
+                  <hr>
+                  <br>Intro to computational modelling
+                  <hr>
+                  <br>Intro to machine learning and AI
+                  <hr>
+                  <br>Intro to clinical and non-clinical applications
+                  <hr>
+              </td>
+              <td>Connection between brain & behaviors
+                  <hr> 
+                  <br>Intro to modeling in neuroscience: 
+                  <br> what we can do and why it’s important?
+                  <hr>
+                  <br>Model fitting: How good is our model?
+                  <hr>
+                  <br>Machine learning: How to train  
+                  <br>your machine?
+                  <hr>
+                  <br>Dimensionality  reduction 
+                  <hr>
+                  <br>Deep learning
+                  <hr>
+                  <br>Brain signal processing 
+                  <br>(EEG, MRI, neural recording)
+              <td>Healthcare problems
+                  <hr>
+                  <br>Neurotechnology 
+                  <hr>
+                  <br>Consumer behaviors & decision making 
+                  <br>(Neuroeconomic)
+                  <hr>
+                  <br>Neuroscience
+              </td>
+            </tr>
+          </table>
         </div>
 
         </div>
@@ -242,17 +247,19 @@
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
-
-        <div class="text-left" style="color: white">
-          <h3>เรียนจบแล้วสามารถไปทำอะไรต่อได้บ้าง?</h3>
-          <p> <ul><li>การประยุกต์ใช้ทางด้านการแพทย์ เช่น การนำความรู้ไปใช้สร้างเครื่องมือเพื่อพัฒนาการวินิจฉัยและการรักษาโรคทางสมอง </li>
-              <li>การประยุกต์ใช้ทางด้านวิศวกรรมชีวภาพ เช่น brain computer interface</li>
-              <li>การประยุกต์ใช้ทางด้านเศรษฐกิจและสังคม เช่น การทำความเข้าใจพฤติกรรมและการตัดสินใจของผู้บริโภค </li>
-              <li>การสร้างองค์ความรู้ใหม่ทางด้านประสาทศาสตร์ เช่น การศึกษาด้านการรับรู้ สมาธิ ความจำ ภาษา การตัดสินใจ </li>
-          </p>
-          <!-- <a class="cta-btn" href="#">Call To Action</a> -->
+        <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="content text-light">
+            <h3>เรียนจบแล้วสามารถไปทำอะไรต่อได้บ้าง?</h3>
+            <p>
+              <ul>
+                <li>การประยุกต์ใช้ทางด้านการแพทย์ เช่น การนำความรู้ไปใช้สร้างเครื่องมือเพื่อพัฒนาการวินิจฉัยและการรักษาโรคทางสมอง</li>
+                <li>การประยุกต์ใช้ทางด้านวิศวกรรมชีวภาพ เช่น brain computer interface</li>
+                <li>การประยุกต์ใช้ทางด้านเศรษฐกิจและสังคม เช่น การทำความเข้าใจพฤติกรรมและการตัดสินใจของผู้บริโภค</li>
+                <li>การสร้างองค์ความรู้ใหม่ทางด้านประสาทศาสตร์ เช่น การศึกษาด้านการรับรู้ สมาธิ ความจำ ภาษา การตัดสินใจ</li>
+              </ul>
+            </p>
+          </div>
         </div>
-
       </div>
     </section><!-- End Cta Section -->
 
