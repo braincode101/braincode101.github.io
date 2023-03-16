@@ -107,32 +107,6 @@ background: rgba(176, 176, 176, 0.9);
     padding: 15px 0;
   }
 }
-table, th, td {
-  border: 2px solid white;
-  border-collapse: separate;
-  border-spacing: 0px;
-}
-th, td {
-/*  background-color: rgba(102, 102, 102, 0.3);*/
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align:top
-}
-
-th{
-
-  background-color: rgba(102, 102, 102, 0.6);
-}
-
-tr:nth-child(even) {
-  background-color: rgba(102, 102, 102, 0.3);
-}
-tr:hover {background-color: rgba(210, 102, 147, 0.2);}
-td:nth-child(odd) {
-  background-color: rgba(102, 102, 102, 0.1);
-}
 
 ul {
   padding-left: 20px;
