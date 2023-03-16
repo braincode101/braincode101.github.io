@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #E7E6DD;#d167af;
+  color: #d167af;
 }
 
 a:hover {
-  color: #E7E6DD;#dd8ed0;
+  color: #dd8ed0;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #E7E6DD;#d167be;
+  background: #d167be;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -106,6 +106,56 @@ background: rgba(176, 176, 176, 0.9);
   #header.header-scrolled {
     padding: 15px 0;
   }
+}
+table, th, td {
+  border: 2px solid white;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+th, td {
+/*  background-color: rgba(102, 102, 102, 0.3);*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align:top
+}
+
+th{
+
+  background-color: rgba(102, 102, 102, 0.6);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(102, 102, 102, 0.3);
+}
+tr:hover {background-color: rgba(210, 102, 147, 0.2);}
+td:nth-child(odd) {
+  background-color: rgba(102, 102, 102, 0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+
+.tscroll {
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 10px;
+/*  border: solid black 1px;*/
+}
+
+.tscroll table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: rgba(170, 170, 170, 1);
+}
+
+
+
+.tscroll td, .tscroll th {
+/*  border-bottom: dashed #888 0px;*/
 }
 
 /*--------------------------------------------------------------
@@ -276,14 +326,14 @@ background: rgba(176, 176, 176, 0.9);
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #562f5a;
+  color: rgba(90, 90, 90, 0.6);#562f5a;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #d16790;
+  color: rgba(90, 90, 90, 0.6);#d16790;
   text-decoration: none;
 }
 
@@ -319,7 +369,7 @@ background: rgba(176, 176, 176, 0.9);
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(90, 30, 50, 0.6);
+  background: rgba(90, 90, 90, 0.6);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -370,7 +420,7 @@ background: rgba(176, 176, 176, 0.9);
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: -1px 0 2px #5a2f3d;
+  text-shadow: -1px 0 2px rgba(90, 90, 90, 0.6);#5a2f3d;
 /*  background-color: rgba(35, 36, 38, 0.6);*/
 }
 
@@ -380,7 +430,7 @@ background: rgba(176, 176, 176, 0.9);
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  text-shadow: -1px 0 2px #5a2f3d;
+  text-shadow: -1px 0 2px rgba(90, 90, 90, 0.6);#5a2f3d;
 }
 
 #hero .btn-get-started {
@@ -539,7 +589,7 @@ section {
 }
 
 .news-container {
-  height: 550px;
+  height: 100%;
   overflow: scroll;
 }
 
