@@ -109,8 +109,8 @@ background: rgba(176, 176, 176, 0.9);
 }
 table, th, td {
   border: 2px solid white;
-  border-collapse: collapse;
-  border-spacing: 30px;
+  border-collapse: separate;
+  border-spacing: 0px;
 }
 th, td {
 /*  background-color: rgba(102, 102, 102, 0.3);*/
@@ -122,6 +122,7 @@ th, td {
 }
 
 th{
+
   background-color: rgba(102, 102, 102, 0.6);
 }
 
@@ -136,6 +137,27 @@ td:nth-child(odd) {
 ul {
   padding-left: 20px;
 }
+
+
+.tscroll {
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 10px;
+/*  border: solid black 1px;*/
+}
+
+.tscroll table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: rgba(170, 170, 170, 1);
+}
+
+
+
+.tscroll td, .tscroll th {
+/*  border-bottom: dashed #888 0px;*/
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -567,7 +589,7 @@ section {
 }
 
 .news-container {
-  height: 1000px;
+  height: 100%;
   overflow: scroll;
 }
 
