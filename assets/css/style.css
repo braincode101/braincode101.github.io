@@ -304,14 +304,14 @@ ul {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #562f5a;
+  color: rgba(90, 90, 90, 0.6);#562f5a;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #d16790;
+  color: rgba(90, 90, 90, 0.6);#d16790;
   text-decoration: none;
 }
 
@@ -347,7 +347,7 @@ ul {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(90, 30, 50, 0.6);
+  background: rgba(90, 90, 90, 0.6);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
