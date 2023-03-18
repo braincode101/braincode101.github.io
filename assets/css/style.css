@@ -126,10 +126,8 @@ ul {
   background-color: rgba(170, 170, 170, 1);
 }
 
-
-
 .tscroll td, .tscroll th {
-/*  border-bottom: dashed #888 0px;*/
+  border-bottom: dashed #888 0px;
 }
 
 /*--------------------------------------------------------------
