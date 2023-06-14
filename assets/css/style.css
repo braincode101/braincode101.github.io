@@ -26,6 +26,73 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.bcc-reg-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bcc-reg-button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.bcc-reg-button2 {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.bcc-reg-button2:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.bcc-reg-button2:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button-25:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.button-25:disabled:active {
+  pointer-events: none;
+}
+
+.button-25:disabled:hover {
+  box-shadow: none;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
