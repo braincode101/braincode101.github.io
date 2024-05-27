@@ -79,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
   outline: 0;
 }
 
+.reg-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .bcc-reg-button {
   display: flex;
   flex-direction: column;
@@ -87,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
+  width: 65%;
 
   background: rgb(0, 88, 126);
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
@@ -121,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
+  width: 65%;
 }
 
 .bcc-reg-button2:hover {
