@@ -199,4 +199,70 @@
     aos_init();
   });
 
+  // Brain Code Camp registration warning modal
+  $(document).ready(function() {
+    // Append the modal markup globally
+    var modalHtml = `
+      <div class="modal fade" id="bccWarningModal" tabindex="-1" role="dialog" aria-labelledby="bccWarningModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="border-radius: 12px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.15); overflow: hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #14938C, #00587E); color: #fff; padding: 18px 24px; border: none;">
+              <h5 class="modal-title d-flex align-items-center" id="bccWarningModalLabel" style="font-weight: 700; font-family: 'Poppins', sans-serif;">
+                <i class="bx bx-error" style="font-size: 24px; margin-right: 8px;"></i>
+                คำแนะนำก่อนเข้าสู่ระบบสอบ / Important Notice
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; text-shadow: none; font-size: 28px; line-height: 0.8; padding: 18px 24px; margin: -18px -24px -18px auto;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="padding: 24px; font-family: 'Open Sans', sans-serif; font-size: 15px; color: #444; line-height: 1.6;">
+              <p style="font-weight: 600; color: #00587E; font-size: 16px; margin-bottom: 12px;">
+                💡 ขอแนะนำให้เปิดคู่มือขั้นตอนการสอบควบคู่กับการสมัคร
+              </p>
+              <p>
+                โครงการ Brain Code Camp มีขั้นตอนการสมัครและทำข้อสอบคัดเลือกผ่านระบบสอบ ซึ่งมีรายละเอียดสำคัญที่ส่งผลต่อคะแนนและการคัดเลือกของคุณ
+              </p>
+              <div style="background-color: #f7f9fa; border-left: 4px solid #14938C; padding: 12px 16px; border-radius: 4px; margin-bottom: 0;">
+                กรุณาเปิดอ่านและทำความเข้าใจ <strong>คู่มือขั้นตอนการสอบ (Instruction File)</strong> ก่อนเข้าสู่ระบบสมัครและทำข้อสอบ
+              </div>
+            </div>
+            <div class="modal-footer" style="padding: 16px 24px; border: none; background-color: #f8f9fa; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+              <a href="https://github.com/braincodecamp/BCC-exam-2026/blob/20ef19959665e10836dd8254a53d6675ecd6d294/bcc-2026-exam-instructions.pdf" target="_blank" id="bccModalInstBtn" class="btn btn-secondary d-flex align-items-center justify-content-center" style="background-color: #5d677a; border: none; border-radius: 6px; padding: 10px 16px; font-weight: 600; font-size: 14px; flex: 1; transition: all 0.2s;">
+                <i class="bx bx-file" style="margin-right: 6px; font-size: 18px;"></i>
+                เปิดคู่มือขั้นตอนการสอบ
+              </a>
+              <a href="https://braincode101.com" target="_blank" id="bccModalRegBtn" class="btn btn-primary d-flex align-items-center justify-content-center" style="background-color: #36A9AE; border: none; border-radius: 6px; padding: 10px 16px; font-weight: 600; font-size: 14px; flex: 1; transition: all 0.2s;">
+                ไปที่ระบบสมัคร / ทำข้อสอบ
+                <i class="bx bx-right-arrow-alt" style="margin-left: 6px; font-size: 18px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    $('body').append(modalHtml);
+
+    // Dynamic hover effects for modal buttons
+    $('#bccModalInstBtn').hover(
+      function() { $(this).css('background-color', '#4a5466'); },
+      function() { $(this).css('background-color', '#5d677a'); }
+    );
+    $('#bccModalRegBtn').hover(
+      function() { $(this).css('background-color', '#2a8387'); },
+      function() { $(this).css('background-color', '#36A9AE'); }
+    );
+
+    // Intercept BCC click to show modal
+    $(document).on('click', 'a.bcc-reg-button2[href*="braincode101.com"]', function(e) {
+      e.preventDefault();
+      $('#bccWarningModal').modal('show');
+    });
+
+    // Close modal when user clicks either button inside the modal
+    $(document).on('click', '#bccModalInstBtn, #bccModalRegBtn', function() {
+      $('#bccWarningModal').modal('hide');
+    });
+  });
+
 })(jQuery);
